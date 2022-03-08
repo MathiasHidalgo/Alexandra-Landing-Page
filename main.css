@@ -1,8 +1,7 @@
 :root{
     --color_third: #fff;
-    --color_primary: #55ffe5;
     --color_secondary: papayawhip;
-    --highlight_color: #d63031;
+    --highlight_color: #7bed9f;
     --links_color: #fdcb6e;
     --padding-container: 100px 0
 }
@@ -14,7 +13,7 @@
 
 body{
     font-family: 'Arimo', sans-serif;
-    background-color: var(--color_third);
+    background-color: var(--color_secondary);
     line-height: 2;
 }
 
@@ -77,7 +76,7 @@ h2{
 
 .menu a{
     font-size: 1.2rem;
-    color: papayawhip;
+    color: #000;
     transition: .2s;
 }
 .menu a:hover{
@@ -89,11 +88,11 @@ header.down{
     background: var(--highlight_color);
     padding: 10px 0px;
     margin-top: 0px;
-    color: #000;
+    color: var(--color_secondary);
     box-shadow: 0px 5px 5px 0px (180deg, 0 , 250px, 48px, 0.3);
 }
 header .down a {
-    color: #000;
+    color: var(--color_secondary);
 }
 
 
@@ -140,9 +139,10 @@ header .down a {
     text-align: center;
 }
 
-.menu_mobile ul li a{
+.menu_mobile a{
     display: block;
     padding: 20px 0;
+    color: #000;
 }
 
 .menu_mobile_closed{
@@ -150,7 +150,7 @@ header .down a {
 }
 
 #menu_mobile_items{
-    background-color:var(--highlight_color);
+    background-color: var(--highlight_color);
     opacity: 100;
 }
 
@@ -160,8 +160,11 @@ header .down a {
     margin-top: 0px;
     top: 0;
     transition: 0.7s ease-in-out;
-    color: #000;
+    color: var(--color_secondary);
     box-shadow: 0px 5px 5px 0px (180deg, 0 , 250px, 48px, 0.3);
+}
+.down_mobile #buttonOpenCloseMenu{
+    fill: papayawhip;
 }
 
 
@@ -175,7 +178,7 @@ header .down a {
     justify-content: center;
     flex-flow: column;
     padding-top: 1rem;
-    padding-bottom: 8rem;
+    padding-bottom: 3rem;
     text-align: center;
     content: "";
     position: relative;
@@ -183,14 +186,11 @@ header .down a {
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(./img/woman-working-and-drinking-tea-in-the-office-free-photo-2210x1473.jpg)no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%);
+    background: var(--color_secondary);
 }
 
 .main_header h2{
-    color: #fff;
+    color: #000;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -200,7 +200,7 @@ header .down a {
 
 .main_header p {
     text-align: center;
-    color: #fff;
+    color: #000;
     font-weight: 800;
     width: 50%;
     letter-spacing: 1px;
@@ -208,7 +208,7 @@ header .down a {
 
 .main_header a {
     background: var(--highlight_color);
-    color: var(--color_third);
+    color: var(--color_secondary);
     padding: 15px;
     border-radius: 20rem;
     margin-top: 40px;
@@ -236,6 +236,7 @@ header .down a {
     padding: 50px 0;
     max-width: 1200px;
     align-items: center;
+    height: 100vh;
 }
 
 .about_image{
@@ -243,6 +244,11 @@ header .down a {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center top;
+}
+
+about img{
+    background-position: px;
 }
 
 .about h2{
@@ -311,7 +317,7 @@ header .down a {
 }
 
 .grid .item .bg_hover{
-    background-color: rgba(255, 0, 0, 0.2);
+    background-color: rgba(248, 255, 149, 0.2);
     width: 100%;
     height: 150%;
     display: grid;
@@ -341,7 +347,7 @@ header .down a {
     color: var(--color_secondary);
 }
 .grid .item .bg_hover .info_customer{
-    color: var(--links_color);
+    color: var(--highlight_color);
 }
 
 /*
@@ -349,7 +355,7 @@ header .down a {
 */
 
 .comments{
-    background-color: #fff;
+    background-color: var(--color_secondary);
     margin-top: 120px;
     margin-bottom: 200px;
 }
@@ -430,7 +436,7 @@ header .down a {
 }
 
 .contact_box{
-    background: #fff;
+    background: var(--color_secondary);
     display: flex;
 }
 
@@ -475,6 +481,7 @@ input{
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
+    background-color: var(--color_secondary);
 }
 
 textarea{
@@ -483,6 +490,7 @@ textarea{
     outline: none;
     padding: 10px;
     box-sizing: border-box;
+    background: var(--color_secondary);
 }
 
 label{
