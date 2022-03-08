@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./main.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Ejemplo de javascript</title>
+</head>
+<body>
+    <div class="container">
+
+        <!--
+            MENU NAV
+        -->
+
+        <header class="menu">
+            <div class="logo">
+                <a href="#" class="alexandra"><h2>Alexandra</h2></a> <!--Preferible un logo en vez de un texto-->
+            </div>
+            <div class="menu_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">Acerca de mi</a></li>
+                    <li><a href="#work">Mi Historial</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>            
+        </header>
+
+        <!--
+            MENU NAV MOBILE
+        -->
+
+        <div class="menu_mobile">
+            <div class="menu_open_close">
+                <div class="header">
+                    <a href="index.html"><h2>Alexandra</h2></a>
+                    <a href="#" id="buttonOpenCloseMenu"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill: papayawhip"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></a>
+                </div>
+                <div id="menu_mobile_items" class="menu_mobile_closed"><!--Osea que esta cerrado y con JS se abrira-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">Acerca de mi</a></li>
+                        <li><a href="#work">Mi Historial</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            MAIN HEADER
+        -->
+
+        <section class="main_header"><!--The image going on css-->
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam earum corporis.</p>
+                <a href="#">Contactame</a>
+        </section>
+
+        <!--
+            ABOUT
+        -->
+
+        <section class="about" id="about">
+            <img src="./img/220697.png" class="about_image">
+            <h2>Alexandra Caja</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aliquam perferendis doloribus doloremque totam nesciunt neque eos! Nam, expedita sed!</p>
+        </section>
+
+        <!--
+            WORK
+        -->
+        <section id="work">
+            <h2>Historial</h2>
+            <div class="grid work">
+                <!--ITEM-->
+                <a href="#" class="item" data-id="0">
+                    <img src="./img/000551405W.jpg" alt="">
+                    <div class="bg_hover">
+                        <div class="info">
+                            <div class="info_title">Aeropuerto</div>
+                            <div class="info_customer">Jorge Chavez</div>
+                        </div>
+                    </div>
+                </a>
+                <!--ITEM-->
+                <a href="#" class="item" data-id="1">
+                    <img src="./img/aceros-arequipa.jpg" alt="">
+                    <div class="bg_hover">
+                        <div class="info">
+                            <div class="info_title">Aeropuerto</div>
+                            <div class="info_customer">Jorge Chavez</div>
+                        </div>
+                    </div>
+                </a>
+                <!--ITEM-->
+                <a href="#" class="item" data-id="2">
+                    <img src="./img/Banco-de-imágenes.png" alt="">
+                    <div class="bg_hover">
+                        <div class="info">
+                            <div class="info_title">Aeropuerto</div>
+                            <div class="info_customer">Jorge Chavez</div>
+                        </div>
+                    </div>
+                </a>
+                <!--ITEM-->
+                <a href="#" class="item" data-id="3">
+                    <img src="./img/arton170129.jpg" alt="">
+                    <div class="bg_hover">
+                        <div class="info">
+                            <div class="info_title">Aeropuerto</div>
+                            <div class="info_customer">Jorge Chavez</div>
+                        </div>
+                    </div>
+                </a>
+                <!--ITEM-->
+                <a href="#" class="item" data-id="4">
+                    <img src="./img/tottus.jpg" alt="">
+                    <div class="bg_hover">
+                        <div class="info">
+                            <div class="info_title">Aeropuerto</div>
+                            <div class="info_customer">Jorge Chavez</div>
+                        </div>
+                    </div>
+                </a>
+                <!--ITEM-->
+                <a href="#" class="item" data-id="0">
+                    <img src="./img/4MBJYCI2PFCCPHFGBCJFOT7AWU.jpg" alt="">
+                    <div class="bg_hover">
+                        <div class="info">
+                            <div class="info_title">Aeropuerto</div>
+                            <div class="info_customer">Jorge Chavez</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <!--
+            COMMENTS
+        -->
+        <section class="comments" id="comments">
+            <div class="comments_container container">
+                <img src="./img/angle-left-solid.svg" class="comments_arrow" id="before">
+
+                <section class="comments_body comments_body--show" data-id="1">
+                    <div class="comments_texts">
+                        <h2 class="subtitle">Name, <span class="comments_work">Diseñador y caca de caca</span></h2>
+                        <p class="comments_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga assumenda dolores illum aut sint nihil!</p>
+                    </div>
+                    <figure class="comments_picture">
+                        <img src="./img/233049.png" class="comments_img">
+                    </figure>
+                </section>
+
+                
+                <section class="comments_body" data-id="2">
+                    <div class="comments_texts">
+                        <h2 class="subtitle">Name, <span class="comments_work">Diseñador y xd de caca</span></h2>
+                        <p class="comments_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga assumenda dolores illum aut sint nihil!</p>
+                    </div>
+                    <figure class="comments_picture">
+                        <img src="./img/233049.png" class="comments_img">
+                    </figure>
+                </section>
+
+
+                <section class="comments_body" data-id="3">
+                    <div class="comments_texts">
+                        <h2 class="subtitle">Name, <span class="comments_work">Diseñador y caca de caca</span></h2>
+                        <p class="comments_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga assumenda dolores illum aut sint nihil!</p>
+                    </div>
+                    <figure class="comments_picture">
+                        <img src="./img/233049.png" class="comments_img">
+                    </figure>
+                </section>
+                <img src="./img/angle-right-solid.svg" class="comments_arrow" id="next">
+            </div>
+        </section>
+
+        <!--
+            CONTACT
+        -->
+
+        <section class="contact" id="contact">
+            <h1>Contactame</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sapiente, illum ipsum necessitatibus consectetur laudantium.</p>
+            <div class="contact_box">
+                <div class="contact_left">
+                    <h3>Envianos tu correo</h3>
+                    <form>
+                        <div class="input_row">
+                            <div class="input_group">
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Tu nombre">
+                            </div>
+                            <div class="input_group">
+                                <label>Numero de Telefono</label>
+                                <input type="text" placeholder="Numero">
+                            </div>
+                        </div>
+                        <div class="input_row">
+                            <div class="input_group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Tu correo electronico">
+                            </div>
+                            <div class="input_group">
+                                <label>Tema de contacto</label>
+                                <input type="text" placeholder="Oferta de trabajo">
+                            </div>
+                        </div>
+                        <label>Mensaje</label>
+                        <textarea rows="5" placeholder="Tu mensaje"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                </div>
+                <div class="contact_right">
+                    <h3>Encuentrame en</h3>
+                    
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>Correo@email.com</td>
+                        </tr>
+                        <tr>
+                            <td>Numero</td>
+                            <td>+51 123 456 789</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+    <!--
+        FOOTER
+    -->      
+        <footer class="footer">
+            <section class="footer_social container">
+                <div class="footer_medias">
+                    <a href="" class="footer_icons"><img src="./img/linkedin-in-brands.svg" class="footer_img"></a>
+                    <a href="" class="footer_icons"><img src="./img/facebook-f-brands.svg" class="footer_img1"></a>
+                    <a href="" class="footer_icons"><img src="./img/instagram-brands.svg" class="footer_img"></a>
+                </div>
+                <h3 class="footer_copyright">Derechos Reservados y &copy; MathBucks</h3>
+            </section>
+        </footer>
+
+
+    </div>
+
+<!--FONT AWESOME-->
+<script src="https://kit.fontawesome.com/8c7e3bc82d.js" crossorigin="anonymous"></script>
+<!--BOXICONS-->
+<script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+<!--JAVASCRIPT CODE-->
+<script src="app.js"></script>
+</body>
+</html>
