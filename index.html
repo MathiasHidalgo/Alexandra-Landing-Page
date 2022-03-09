@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./main.css">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--SCROLL ANIMATION-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Ejemplo de javascript</title>
 </head>
 <body>
@@ -66,7 +71,7 @@
             ABOUT
         -->
 
-        <section class="about" id="about">
+        <section class="about" id="about" data-aos="zoom-in">
             <img src="./img/Cv.png" class="about_image">
             <h2>Alexandra Caja</h2>
             <p>Técnica en Comunicación Integral, apasionada por la investigación y redacción. Actualmente inmersa en el mundo digital, con ansias de descubrir y desempeñarme en demás áreas dentro del campo de las Comunicaciones.</p>
@@ -75,7 +80,7 @@
         <!--
             WORK
         -->
-        <section id="work">
+        <section id="work" data-aos="fade-up">
             <h2>Historial</h2>
             <div class="grid work">
                 <!--ITEM-->
@@ -144,7 +149,7 @@
         <!--
             COMMENTS
         -->
-        <section class="comments" id="comments">
+        <section class="comments" id="comments" data-aos="fade-left">
             <div class="comments_container container">
                 <img src="./img/angle-left-solid.svg" class="comments_arrow" id="before">
 
@@ -259,6 +264,11 @@
 <script src="https://kit.fontawesome.com/8c7e3bc82d.js" crossorigin="anonymous"></script>
 <!--BOXICONS-->
 <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+<!--SCROLL ANIMATIONS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <!--JAVASCRIPT CODE-->
 <script src="app.js"></script>
 </body>

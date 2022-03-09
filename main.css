@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: var(--color_secondary);
     line-height: 2;
 }
@@ -381,7 +381,7 @@ about img{
 .comments_body--show {
     opacity: 1;
     position: unset;
-    transition: opacity 1.5 ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .comments_img {
