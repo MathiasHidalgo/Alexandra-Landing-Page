@@ -50,7 +50,7 @@ window.addEventListener('scroll', function(){
 });
 })();
 
-
+//VALIDAR FORMULARIO 
 const $form = document.querySelector('#form');
 const $buttonMailto = document.querySelector('#mailto')
 
