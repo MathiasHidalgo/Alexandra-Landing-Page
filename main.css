@@ -225,12 +225,13 @@ header .down a {
     width: 10%;
     box-shadow: 0px 5px 15px 0px rgba(1, 0, 8, 0.3);
     transition: .8s;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .main_header a:hover{
     letter-spacing: 3.5px;
     font-size: 18.5px;
+    box-shadow: 0px 5px 15px 0px rgba(1, 0, 10, 0.7);
 }
 
 /*
@@ -516,8 +517,15 @@ button{
     color: #fff;
     height: 35px;
     border-radius: 30px;
-    margin-left: 20px;
+    margin-left: 8px;
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover{
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.4);
 }
 
 .contact_left h3{

@@ -64,7 +64,7 @@
         <section class="main_header"><!--The image going on css-->
                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam earum corporis.</p>
-                <a href="#">Contactame</a>
+                <a href="#contact">Contactame</a>
         </section>
 
         <!--
@@ -198,32 +198,34 @@
             <div class="contact_box">
                 <div class="contact_left">
                     <h3>Envianos tu correo</h3>
-                    <form>
+                    <form id="form" action="https://formspree.io/f/xqknbvqk"
+                    method="POST">
                         <div class="input_row">
                             <div class="input_group">
-                                <label>Nombre</label>
-                                <input type="text" placeholder="Tu nombre">
+                                <label for="name">Nombre</label>
+                                <input name="name" required type="text" placeholder="Tu nombre" id="name">
                             </div>
                             <div class="input_group">
-                                <label>Numero de Telefono</label>
-                                <input type="text" placeholder="Numero">
+                                <label for="number">Numero de Telefono</label>
+                                <input name="number" required type="number" placeholder="Numero" id="number">
                             </div>
                         </div>
                         <div class="input_row">
                             <div class="input_group">
-                                <label>Email</label>
-                                <input type="email" placeholder="Tu correo electronico">
+                                <label for="email">Email</label>
+                                <input name="email" required type="email" placeholder="Tu correo electronico" id="email">
                             </div>
                             <div class="input_group">
-                                <label>Tema de contacto</label>
-                                <input type="text" placeholder="Oferta de trabajo">
+                                <label for="topic">Tema de contacto</label>
+                                <input name="topic" required type="text" placeholder="Oferta de trabajo" id="topic">
                             </div>
                         </div>
                         <label>Mensaje</label>
-                        <textarea rows="5" placeholder="Tu mensaje"></textarea>
+                        <textarea rows="5" placeholder="Tu mensaje" name="message" id="message"></textarea>
 
                         <button type="submit">Enviar</button>
                     </form>
+                    <a href="mailto:alexandracaja.d@gmail.com" id="mailto">mail</a>
 
                 </div>
                 <div class="contact_right">
