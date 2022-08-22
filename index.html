@@ -13,9 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!--SCROLL ANIMATION-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    // Add the new slick-theme.css if you want the default styling
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Ejemplo de javascript</title>
 </head>
 <body>
@@ -152,9 +149,11 @@
         <!--
             COMMENTS
         -->
-        <section class="comments images-slideshow" id="comments" data-aos="fade-left">
+        <section class="comments" id="comments">
             <div class="comments_container container">
-                <section class="comments_body comments_body--show imageSlides" data-id="1">
+                <img src="./img/angle-left-solid.svg" class="comments_arrow" id="before" data-aos="fade-right" alt>
+
+                <section class="comments_body comments_body--show" data-id="1" data-aos="">
                     <div class="comments_texts">
                         <h2 class="subtitle">Name 1, <span class="comments_work">Diseñador y caca de caca</span></h2>
                         <p class="comments_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga assumenda dolores illum aut sint nihil!</p>
@@ -165,7 +164,7 @@
                 </section>
 
                 
-                <section class="comments_body imageSlides" data-id="2">
+                <section class="comments_body" data-id="2" data-aos="">
                     <div class="comments_texts">
                         <h2 class="subtitle">Name 2, <span class="comments_work">Diseñador y xd de caca</span></h2>
                         <p class="comments_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga assumenda dolores illum aut sint nihil!</p>
@@ -176,7 +175,7 @@
                 </section>
 
 
-                <section class="comments_body imageSlides" data-id="3">
+                <section class="comments_body" data-id="3" data-aos="">
                     <div class="comments_texts">
                         <h2 class="subtitle">Name 3, <span class="comments_work">Diseñador y caca de caca</span></h2>
                         <p class="comments_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga assumenda dolores illum aut sint nihil!</p>
@@ -185,8 +184,7 @@
                         <img src="./img/233049.png" class="comments_img">
                     </figure>
                 </section>
-                <a class="slider-btn previous" onclick="setSlides(-1)"><</a>
-                <a class="slider-btn next" onclick="setSlides(1)">></a>
+                <img src="./img/angle-right-solid.svg" class="comments_arrow" id="next">
             </div>
         </section>
 
@@ -275,8 +273,5 @@
   </script>
 <!--JAVASCRIPT CODE-->
 <script src="app.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
