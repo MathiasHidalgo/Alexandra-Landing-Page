@@ -24,18 +24,41 @@ buttonBefore.addEventListener('click', () =>{
 })
 
 //COMENTS SLIDERS
-const changePosition = (add) =>{
-    const currentComment = document.querySelector('.comments_body--show').dataset.id;
-    value = Number(currentComment);
-    value += add;
+// const changePosition = (add) =>{
+//     const currentComment = document.querySelector('.comments_body--show').dataset.id;
+//     value = Number(currentComment);
+//     value += add;
 
-    sliders[Number(currentComment)-1].classList.remove('comments_body--show');
-    if(value === sliders.length+1 || value == 0){
-        value = value === 0 ? sliders.length : 1;
-    }
+//     sliders[Number(currentComment)-1].classList.remove('comments_body--show');
+//     if(value === sliders.length+1 || value == 0){
+//         value = value === 0 ? sliders.length : 1;
+//     }
     
-    sliders[value-1].classList.add('comments_body--show');
-}
+//     sliders[value-1].classList.add('comments_body--show');
+// }
+
+// var currentIndex = 1;
+// displaySlides(currentIndex);
+
+// function setSlides(num) {
+//     displaySlides(currentIndex += num);
+// } 
+
+// function displaySlides(num) {
+//     var x;
+//     var slides = document.getElementsByClassName('comments_body');
+//     if (num > slides.length) {
+//         currentIndex = 1
+//     }
+//     if (num < 1) {
+//         currentIndex = slides.length;
+//     }
+//     for (x = 0; x < slides.length; x++) {
+//         slides[x].style.display = "none";
+//     }
+//     slides[currentIndex - 1].style.display = "block";
+// }
+
 
 //SCROLLNAV
 window.addEventListener('scroll', function(){

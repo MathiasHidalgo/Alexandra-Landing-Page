@@ -3,7 +3,7 @@
     --color_secondary: papayawhip;
     --highlight_color: #7bed9f;
     --links_color: #fdcb6e;
-    --padding-container: 100px 0
+    --padding-container: 100px 0;
 }
 
 *{
@@ -379,6 +379,7 @@ about img{
 }
 
 .comments_body{
+    background-image: url();
     display: grid;
     grid-template-columns: 1fr max-content;
     justify-content: space-between;
@@ -427,6 +428,55 @@ about img{
     margin-top: 20px;
     margin-left: 60px;
 }
+
+/* .imagesSlides {
+    display: none;
+}
+
+.imagesSlides img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.images-slideshow {
+    max-width: 612px;
+    position: relative;
+    margin: auto;
+}
+
+.slider-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.previous {
+    /* background-image: url("/img/angle-left-solid.svg"); */
+    /* left: 2%;
+}
+
+.next {
+    /* background-image: url("/img/angle-right-solid.svg"); */
+    /* right: 2%;
+} */
+
+/* .previous:hover,
+.next:hover {
+    color: rgb(255, 253, 253);
+    background-color: rgba(0, 0, 0, 0.8);
+} */
 
 /*
     CONTACTO
